@@ -14,13 +14,13 @@ import static com.codeborne.selenide.Selenide.open;
 public class SampleSelenideTest {
 
   @BeforeMethod
-  public void setUp(){
+  public void setUp() {
     Configuration.browser = "firefox";
   }
 
   @Test
-  public void loginTest (){
-    open ("https://jira.hillel.it/secure/Dashboard.jspa");
+  public void loginTest() {
+    open("https://jira.hillel.it/secure/Dashboard.jspa");
     $(By.id("login-form-username")).setValue("RuslanaChumachenko");
     $(By.id("login-form-password")).setValue("RuslanaChumachenko");
     $(By.id("login")).click();
